@@ -1,0 +1,2 @@
+def dna(x):
+    return x.count("A"), x.count("G"), x.count("C"), x.count("T")
