@@ -1,4 +1,8 @@
-import itertools as it
-def product(iters, n):
-    for comb in it.product(iters, repeat=n):
-        print(''.join(comb))
+import itertools
+n = 2
+s='A B C D E F G H I J'
+lst = list(map(str,s.split()))
+x = list(itertools.product(lst, repeat=n))
+#print(x)
+#print(len(x))
+print(*[''.join(i) for i in x],sep='\n')
